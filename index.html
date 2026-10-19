@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aleph PR — Tel Aviv</title>
+  <meta name="description" content="Aleph PR is a Tel Aviv studio for strategy, media, and influence." />
+  <meta name="theme-color" content="#070708" />
+  <link rel="icon" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="top">
+    <header>
+      <div class="bar">
+        <a class="brand" href="#top">
+          <svg viewBox="0 0 48 48" class="mark" aria-hidden="true"><path d="M17 6c-6 7-4 13 3 18-8 4-12 11-8 18" stroke="currentColor" stroke-width="4.25" stroke-linecap="round" fill="none"/><path d="M31 6c6 7 4 13-3 18 8 4 12 11 8 18" stroke="currentColor" stroke-width="4.25" stroke-linecap="round" fill="none"/></svg>
+          ALEPH <span>PR</span>
+        </a>
+        <nav class="desk" aria-label="Studio">
+          <a href="#studio">Studio</a><a href="#practice">Practice</a><a href="#work">Work</a><a href="#brief">Brief</a>
+        </nav>
+        <div class="right">
+          <p class="clock" id="clock">— Tel Aviv</p>
+          <a class="btn hide-sm" href="#brief">Open a brief</a>
+          <button class="menu" type="button" aria-label="Open menu" onclick="document.getElementById('nav').classList.add('on')">☰</button>
+        </div>
+      </div>
+    </header>
+    <div id="nav" class="sheet">
+      <button type="button" class="close" aria-label="Close menu" onclick="document.getElementById('nav').classList.remove('on')">✕</button>
+      <a href="#studio" onclick="document.getElementById('nav').classList.remove('on')">Studio</a>
+      <a href="#practice" onclick="document.getElementById('nav').classList.remove('on')">Practice</a>
+      <a href="#work" onclick="document.getElementById('nav').classList.remove('on')">Work</a>
+      <a href="#brief" onclick="document.getElementById('nav').classList.remove('on')">Brief</a>
+    </div>
+    <main>
+      <a class="hero" href="#studio">
+        <div class="lockup">
+          <svg viewBox="0 0 48 48" class="bigmark" aria-hidden="true"><path d="M17 6c-6 7-4 13 3 18-8 4-12 11-8 18" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/><path d="M31 6c6 7 4 13-3 18 8 4 12 11 8 18" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/></svg>
+          <p class="word">ALEPH PR</p>
+          <p class="sub">TEL AVIV</p>
+          <p class="tag">Strategy · Media · Influence</p>
+        </div>
+        <div class="hero-bar">
+          <p>Tel Aviv <span>/</span> Strategy · Media · Influence</p>
+          <span class="btn">View the studio ↓</span>
+        </div>
+      </a>
+      <div class="marquee" aria-hidden="true"><div class="track"><span>Strategy / Media / Influence / Tel Aviv / Strategy / Media / Influence / Tel Aviv / Strategy / Media / Influence / Tel Aviv / </span><span>Strategy / Media / Influence / Tel Aviv / Strategy / Media / Influence / Tel Aviv / Strategy / Media / Influence / Tel Aviv / </span></div></div>
+      <section id="studio" class="wrap">
+        <p class="kicker">Tel Aviv studio</p>
+        <h1>The public life of a private ambition.</h1>
+        <div class="split">
+          <p class="lede">Aleph is a communications practice for companies, institutions, and cultural forces that intend to be understood — in this city, and past it. Strategy, media, and influence, held in one room.</p>
+          <div class="actions">
+            <a class="btn ghost" href="#practice">The practice</a>
+            <a class="btn" href="#work">View the work</a>
+          </div>
+        </div>
+      </section>
+      <section class="signal" aria-label="Studio lines">
+        <div class="wrap row">
+          <div>
+            <p class="kicker" id="sig-n">01 / 04</p>
+            <p class="line" id="sig">Narrative before noise.</p>
+          </div>
+          <div class="actions">
+            <button class="chip" type="button" onclick="step(-1)">Prev</button>
+            <button class="chip" type="button" onclick="step(1)">Next</button>
+          </div>
+        </div>
+      </section>
+      <section id="practice" class="wrap">
+        <p class="kicker">01 — Practice</p>
+        <h2>Three disciplines. One room.</h2>
+        <div class="chips" id="ptabs"></div>
+        <div class="panel" id="ppanel"></div>
+      </section>
+      <section id="work" class="wrap">
+        <p class="kicker">02 — Work</p>
+        <div class="split">
+          <h2>Selected studies.</h2>
+          <p class="muted">Studio studies — ways a story can be held. Not a client roster.</p>
+        </div>
+        <div class="chips" id="filters"></div>
+        <article class="study" id="study"></article>
+        <div class="grid" id="grid"></div>
+      </section>
+      <section class="wrap">
+        <p class="kicker">03 — Method</p>
+        <h2>How a story is held.</h2>
+        <ol class="steps">
+          <li><span>01</span><h3>Listen</h3><p>The room, the record, and the risk. We begin with what is already being said.</p></li>
+          <li><span>02</span><h3>Frame</h3><p>One story, sharp enough to travel, and a list of what will not be claimed.</p></li>
+          <li><span>03</span><h3>Place</h3><p>Desks, partners, and the order of revelation. Sequence is the strategy.</p></li>
+          <li><span>04</span><h3>Hold</h3><p>After the headline, the story still has to be true. We stay for that part.</p></li>
+        </ol>
+      </section>
+      <section id="brief" class="wrap brief">
+        <div>
+          <p class="kicker">04 — Brief</p>
+          <h2>Open a brief.</h2>
+          <p class="muted">Tell us the discipline and the horizon. The slip updates as you write — then you can view it, and copy it.</p>
+          <form id="form">
+            <label>Name<input name="name" required autocomplete="name" /></label>
+            <label>Organization <em>optional</em><input name="organization" autocomplete="organization" /></label>
+            <fieldset><legend>Discipline</legend><div class="chips" id="disc"></div></fieldset>
+            <fieldset><legend>Horizon</legend><div class="chips" id="hor"></div></fieldset>
+            <label>Note<textarea name="note" required placeholder="What needs to be understood, and by whom."></textarea></label>
+            <p class="err" id="err" hidden>Add your name and a short note to open the brief.</p>
+            <button class="btn" type="submit">View the brief</button>
+          </form>
+        </div>
+        <article class="slip" id="slip" aria-live="polite"></article>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap foot">
+        <div>
+          <p class="brand">ALEPH PR</p>
+          <p class="muted">Tel Aviv · תל אביב</p>
+          <p class="kicker">Strategy · Media · Influence</p>
+        </div>
+        <nav>
+          <a href="#studio">Studio</a><a href="#practice">Practice</a><a href="#work">Work</a><a href="#brief">Brief</a><a href="#top">Back to top</a>
+        </nav>
+      </div>
+      <p class="copy">© <span id="year"></span> Aleph PR</p>
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

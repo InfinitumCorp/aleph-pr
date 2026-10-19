@@ -1,0 +1,89 @@
+:root{--bg:#070708;--surface:#121216;--fg:#f4f4f5;--muted:#a1a1aa;--silver:#d6d6dc;--line:#2a2a31;--strong:#4a4a54}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Outfit,ui-sans-serif,system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,a.btn{cursor:pointer}
+h1,h2,h3,.line,.brand{font-family:Syne,ui-sans-serif,sans-serif;letter-spacing:-.02em}
+h1{font-size:clamp(2.4rem,6vw,4.5rem);line-height:1;margin:.6rem 0 0}
+h2{font-size:clamp(2rem,4vw,3.2rem);margin:.5rem 0 0}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar,.wrap{max-width:72rem;margin:0 auto;padding:0 1.25rem}
+.bar{height:4rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;font-weight:700;letter-spacing:.16em;font-size:.85rem}
+.brand span,.muted{color:var(--muted)}
+.mark{width:2rem;height:2rem}
+.desk{display:none;gap:.2rem}
+.desk a,.right a{min-height:2.75rem;display:inline-flex;align-items:center;padding:0 .7rem;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.desk a:hover{color:var(--fg)}
+.right{display:flex;align-items:center;gap:.6rem}
+.clock{display:none;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:2.75rem;padding:0 1.25rem;background:var(--fg);color:var(--bg);border:1px solid var(--fg);font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.btn.ghost{background:transparent;color:var(--fg)}
+.btn.ghost:hover{background:var(--fg);color:var(--bg)}
+.menu{display:inline-flex;width:2.75rem;height:2.75rem;align-items:center;justify-content:center;background:transparent;color:var(--fg);border:1px solid var(--line);font-size:1.2rem}
+.sheet{display:none;position:fixed;inset:0;background:var(--bg);z-index:30;padding:1.5rem;flex-direction:column}
+.sheet.on{display:flex}
+.sheet a{border-bottom:1px solid var(--line);padding:1.2rem 0;font-family:Syne,sans-serif;font-size:2.4rem}
+.close{align-self:flex-end;background:transparent;color:var(--fg);border:1px solid var(--line);width:2.75rem;height:2.75rem}
+.lockup{min-height:70svh;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:3rem 1.25rem 2rem;background:
+  linear-gradient(115deg,transparent 46%,rgba(255,255,255,.06) 46.4%,transparent 47%),
+  radial-gradient(80% 60% at 80% 40%,#1c1c22 0%,#070708 70%);
+  border-bottom:1px solid var(--line)}
+.bigmark{width:7rem;height:7rem;margin-bottom:1.2rem}
+.word{font-family:Syne,sans-serif;font-size:clamp(3rem,10vw,6.5rem);letter-spacing:.08em;margin:0;font-weight:800;line-height:.9}
+.sub{letter-spacing:.5em;font-size:.8rem;margin:.8rem 0 0;color:var(--silver)}
+.tag{letter-spacing:.28em;text-transform:uppercase;font-size:.75rem;color:var(--muted);margin:.7rem 0 0}
+.hero-bar{display:flex;flex-direction:column;gap:1rem;border-bottom:1px solid var(--line);padding:1rem 1.25rem}
+.hero-bar p{margin:0;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.hero-bar .btn{width:100%}
+.marquee{overflow:hidden;border-bottom:1px solid var(--line)}
+.track{display:flex;width:max-content;animation:m 36s linear infinite}
+.track span{padding:.8rem 0;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+@keyframes m{to{transform:translateX(-50%)}}
+.wrap{padding:4.5rem 1.25rem}
+.kicker{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0}
+.lede,.muted{color:var(--muted);line-height:1.6}
+.split{display:grid;gap:1.5rem;margin-top:1.5rem}
+.actions{display:flex;flex-direction:column;gap:.6rem}
+.actions .btn{width:100%}
+.signal{border-block:1px solid var(--line)}
+.line{font-size:clamp(1.8rem,4vw,3rem);margin:.6rem 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0}
+.chip{min-height:2.75rem;padding:0 1rem;border:1px solid var(--line);background:transparent;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;font-size:.75rem}
+.chip.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.panel,.study,.slip{border:1px solid var(--line);padding:1.4rem}
+.slip,.study{background:var(--surface)}
+.grid{display:grid;gap:.7rem;margin-top:.7rem}
+.card{border:1px solid var(--line);background:transparent;color:var(--fg);text-align:left;padding:1.2rem;display:flex;flex-direction:column;min-height:11rem}
+.card.on{border-color:var(--fg)}
+.card b{font-family:Syne,sans-serif;font-size:1.5rem;margin-top:1rem}
+.steps{list-style:none;padding:0;margin:2rem 0 0;display:grid;gap:1px;background:var(--line)}
+.steps li{background:var(--bg);padding:1.4rem}
+.steps span,.card span{font-size:.75rem;letter-spacing:.14em;color:var(--muted)}
+form{display:grid;gap:1.2rem;margin-top:1.5rem}
+label,legend{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+input,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);color:var(--fg);padding:.8rem 0;font:inherit}
+textarea{min-height:7rem}
+.err{color:var(--fg)}
+.slip h3{font-size:2.4rem;margin:1.4rem 0}
+.row-slip{display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding:.6rem 0;font-size:.9rem}
+.foot{display:flex;flex-direction:column;gap:1.4rem}
+.foot nav{display:flex;flex-wrap:wrap;gap:1rem}
+.foot a{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.copy{border-top:1px solid var(--line);padding:1rem 1.25rem;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+@media(min-width:768px){
+  .desk,.clock{display:flex}
+  .menu,.hide-sm{display:none}
+  .right .btn{display:inline-flex}
+  .hero img{height:auto;object-fit:contain}
+  .hero-bar{flex-direction:row;align-items:center;justify-content:space-between;padding:1rem 2.5rem}
+  .hero-bar .btn,.actions .btn{width:auto}
+  .actions{align-items:flex-end}
+  .split{grid-template-columns:1.4fr .8fr;align-items:end}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(4,1fr)}
+  .brief{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+  .foot{flex-direction:row;justify-content:space-between;align-items:end}
+}
