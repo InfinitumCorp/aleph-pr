@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Static site: everything in ./public is served from Workers Static Assets.
+  // No Worker script — there are no server routes.
+  "name": "aleph-pr",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  "observability": { "enabled": true }
+}
