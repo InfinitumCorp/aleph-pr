@@ -18,6 +18,8 @@ header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px s
 .desk a,.right a{min-height:2.75rem;display:inline-flex;align-items:center;padding:0 .7rem;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .desk a:hover{color:var(--fg)}
 .right{display:flex;align-items:center;gap:.6rem}
+.cid{display:flex;align-items:center}.cid-lg{display:none}
+.sheet-top{display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .clock{display:none;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-variant-numeric:tabular-nums}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:2.75rem;padding:0 1.25rem;background:var(--fg);color:var(--bg);border:1px solid var(--fg);font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
 .btn.ghost{background:transparent;color:var(--fg)}
@@ -76,6 +78,7 @@ textarea{min-height:7rem}
 @media(min-width:768px){
   .desk,.clock{display:flex}
   .menu,.hide-sm{display:none}
+  .cid-lg{display:flex}
   .right .btn{display:inline-flex}
   .hero img{height:auto;object-fit:contain}
   .hero-bar{flex-direction:row;align-items:center;justify-content:space-between;padding:1rem 2.5rem}
